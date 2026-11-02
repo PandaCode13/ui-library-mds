@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button"
+import { CardGallery } from "./stories/Card"
 
 function App() {
-
   return (
-    <>
-    <h1 className="text-3xl font-bold text-red-500">Welcome to the UI Library</h1>
-    <Button variant="default" size="default">Default Button</Button>
-    </>
+    <main className="card-page">
+      <h1 className="card-page-title">Nos cartes</h1>
+      <CardGallery />
+      <div className="mt-8">
+        <Button variant="default" size="default">Default Button</Button>
+      </div>
+    </main>
   )
 }
 
